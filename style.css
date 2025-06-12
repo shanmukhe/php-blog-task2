@@ -1,0 +1,315 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Choose a modern, readable font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0; /* Removed body padding to allow header/footer to span full width */
+    background-color: #ffe4e1; /* Light pink background color */
+    color: #333; /* Dark grey text color */
+}
+
+/* Header Styling */
+header {
+    background-color: #b0e0e6; /* Light blue background for header */
+    padding: 10px 20px; /* Add some padding inside the header */
+    text-align: center; /* Center content inside header */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #98fb98; /* Lightest shade of green for footer */
+    padding: 10px 20px; /* Add some padding inside the footer */
+    text-align: center; /* Center content inside footer */
+    margin-top: 30px; /* Add space above the footer */
+}
+
+
+/* Container Styling (for main content like index, login, register) */
+.crud-container {
+    max-width: 800px; /* Limit content width for readability */
+    margin: 20px auto; /* Center the container and add vertical margin */
+    padding: 20px 30px; /* Add padding inside the container */
+    background-color: #fff; /* White background for the content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #000; /* Black color for all headings */
+    font-weight: bold; /* Bold text for all headings */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Ensure main headings are centered */
+h1, h2 {
+    text-align: center;
+}
+
+
+.blog-title {
+    text-align: center; /* Center the main blog title */
+    color: #000; /* Black color */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    margin-bottom: 25px;
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 15px;
+}
+
+/* Link Styles */
+a {
+    color: #87ceeb; /* Light blue for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #4682b4; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Button Styles (for your action links and submit buttons) */
+.btn-action, .btn-add-post {
+    display: inline-block; /* Allow padding and margin */
+    background-color: #87ceeb; /* Light blue background */
+    color: #000; /* Black text for contrast */
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 15px; /* Increased space between buttons */
+    margin-bottom: 10px; /* Space below buttons */
+    transition: background-color 0.3s ease;
+}
+
+.btn-action:hover, .btn-add-post:hover {
+    background-color: #4682b4; /* Darker blue on hover */
+    text-decoration: none; /* Keep no underline on hover */
+}
+
+.btn-action.delete {
+    background-color: #dc3545; /* Keep red for delete button */
+    color: white; /* White text for contrast */
+}
+
+.btn-action.delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.add-post-button {
+    text-align: right; /* Align the add post button to the right */
+    margin-bottom: 20px;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd; /* Light grey line */
+    margin: 20px 0; /* Space above and below the line */
+}
+
+/* Post Box Styling (primarily for index.php) */
+.post-box {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.post-box h3 {
+    margin-bottom: 5px;
+    color: #87ceeb; /* Match title color to blue */
+}
+
+.post-box small {
+    color: #666; /* Lighter color for date */
+    font-style: italic;
+}
+
+.post-actions {
+    margin-top: 15px;
+}
+
+/* Form Group Styling */
+form div {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Label Styling */
+label {
+    display: block; /* Make labels appear on their own line */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make labels slightly bolder */
+    color: #555; /* Slightly lighter color than main text */
+}
+
+/* Input, Select, and Textarea Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%; /* Make inputs take full width of their container */
+    padding: 10px; /* Add padding inside inputs */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 0; /* Make corners square */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 1rem; /* Ensure readable font size */
+    font-family: 'Arial', sans-serif; /* Match body font */
+    color: #333; /* Match body text color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: none; /* Remove default outline */
+    border-color: #87ceeb; /* Highlight border on focus with blue */
+    box-shadow: 0 0 5px rgba(135, 206, 235, 0.5); /* Add a subtle blue shadow on focus */
+}
+
+/* Style for the submit button - reusing .btn-action */
+button[type="submit"] {
+    /* Inherits styles from .btn-action */
+    cursor: pointer; /* Indicate it's clickable */
+    width: auto; /* Don't force button to full width unless desired */
+}
+
+/* Optional: Style for error messages */
+.error-message {
+    color: #dc3545; /* Red color for errors */
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Optional: Style for success messages */
+.success-message {
+    color: #28a745; /* Green color for success */
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Responsive Considerations */
+@media (max-width: 600px) {
+    body {
+        padding: 0; /* Remove body padding on small screens too */
+    }
+
+    header, footer {
+        padding: 10px; /* Adjust header/footer padding on small screens */
+    }
+
+    .crud-container {
+        padding: 15px;
+    }
+
+    .btn-action, .btn-add-post {
+        display: block; /* Stack buttons on small screens */
+        margin-right: 0; /* Remove right margin when stacked */
+        margin-bottom: 10px;
+    }
+
+    .add-post-button {
+        text-align: center; /* Center button on small screens */
+    }
+
+    button[type="submit"] {
+         display: block; /* Stack button on small screens */
+         width: 100%; /* Make button full width on small screens */
+         margin-right: 0; /* Remove right margin when stacked */
+         margin-bottom: 10px;
+    }
+
+    /* Stack header nav links on small screens */
+    header nav a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px; /* Add space between stacked links */
+    }
+}
+
+/* Center the navigation links in the header */
+header nav {
+    text-align: center;
+    margin-top: 10px; /* Add a little space below the main heading */
+}
+
+/* Style the header navigation links as buttons */
+header nav a {
+    display: inline-block; /* Treat links as block elements to apply padding/margins */
+    background-color: #87ceeb; /* Light blue background */
+    color: #000; /* Black text for contrast */
+    padding: 8px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Keep header nav buttons rounded */
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px; /* Space between buttons */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+header nav a:hover {
+    background-color: #4682b4; /* Darker blue on hover */
+    color: #fff; /* White text on hover for better contrast */
+}
+
+
+/* Style to center the "New user? Register here" link on the login page */
+.login-register-link {
+    display: block; /* Make the link a block element */
+    text-align: center; /* Center the text within the block */
+    margin-top: 20px; /* Add space above the link */
+}
+
+/* Ensure there's space below the form in the container */
+.crud-container form {
+    margin-bottom: 15px;
+}
+/* --- Custom Create Post Page Styling --- */
+
+/* Center the form in the page */
+.create-post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style text inputs and textarea with square corners */
+.create-post-form input[type="text"],
+.create-post-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* Style the create button */
+.create-post-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #0056b3;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-post-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
