@@ -12,9 +12,17 @@ if (!isset($_SESSION["user_id"])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>Welcome to your Dashboard</h2>
-<a href="create.php">Create a New Post</a> | 
-<a href="index.php">View All Posts</a> | 
-<a href="logout.php">Logout</a>
+<?php include 'header.php'; ?>
+
+<div class="dashboard-container">
+    <h2 class="blog-title">👋 Welcome to your Dashboard</h2>
+    <div class="dashboard-links">
+        <a href="create.php" class="btn-action">✍️ Create a New Post</a>
+        <a href="index.php" class="btn-action">📖 View All Posts</a>
+        <a href="logout.php" class="btn-action delete">🚪 Logout</a>
+    </div>
+</div>
+
+<?php include 'footer.php'; ?>
 </body>
 </html>

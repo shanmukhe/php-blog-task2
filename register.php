@@ -81,7 +81,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <!--<input type="password" id="password" name="password" required> -->
+            <input type="password" name="password" id="password" required placeholder="At least 8 characters, letters & numbers">
         </div>
 
         <div>

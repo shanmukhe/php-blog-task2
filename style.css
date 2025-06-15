@@ -313,3 +313,38 @@ header nav a:hover {
 .create-post-form input[type="submit"]:hover {
     background-color: #0056b3;
 }
+form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dashboard-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard-links {
+    margin-top: 20px;
+}
+
+.dashboard-links a {
+    margin: 10px;
+    display: inline-block;
+}
